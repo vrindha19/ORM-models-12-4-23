@@ -1,0 +1,15 @@
+{% block content %}
+  <h1>Register page</h1>
+  <form method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    Name=<input type="text" name="Name" />
+    Username<input type="text" name="Username" />
+    Email<input type="email" name="Email" />
+    Password<input type="password" name="Password" />
+    Confirmpassword<input type="password" name="Confirmpassword" />
+    
+    <button type="submit">register</button>
+
+  </form>
+{% endblock %}
